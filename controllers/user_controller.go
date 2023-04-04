@@ -80,7 +80,7 @@ func sendEmailToAdmin(name string) error {
 
     // Set up email message
     subject := "New User Registration"
-    body := "Hi Admin, <br><br> A new user has been registered with the name " + name + ". <br><br> Thanks, <br> Team"
+    body := "👥 Hi Admin, <br><br> A new user has been registered with the name " + name + ". <br><br> Thanks, <br> Team"
     from := os.Getenv("SMTP_EMAIL")
     to := []string{"avijitsen.me@gmail.com"}
 
@@ -112,7 +112,7 @@ func sendEmailToAdminDelete(name string) error {
 
     // Set up email message
     subject := "New User Registration"
-    body := "Hi Admin, <br><br> A new user has been Deleted with the name " + name + ". <br><br> Thanks, <br> Team"
+    body := "⚠️ Hi Admin, <br><br> A new user has been Deleted with the name " + name + ". <br><br> Thanks, <br> Team"
     from :=os.Getenv("SMTP_EMAIL")
     to := []string{"avijitsen.me@gmail.com"}
 
